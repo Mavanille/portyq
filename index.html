@@ -59,6 +59,7 @@
     </section>
 
     <section id = "qthreat" class="use-case">
+        <h2 class="section-title">Expertise</h2>
         <div class="features">
             <div class="product-card">
                 <h3>PQC</h3>
@@ -132,6 +133,12 @@
 
     <!-- Team Section -->
     <section class="content-section" id="team">
+        <h2 class="section-title">About Us</h2>
+        <div class="intro-team">
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet consectetur adipiscing elit quisque faucibus ex sapien. 
+                Quisque faucibus ex sapien vitae pellentesque sem placerat. Vitae pellentesque sem placerat in id cursus mi.</p>
+        </div>
+
         <h2 class="section-title">Scientific Board</h2>
         <div class="team-grid">
             <div class="team-card">
@@ -155,6 +162,7 @@
 
     <!-- Partners Section -->
     <section class="content-section white-bg" id="partners">
+        <h2 class="section-title">Our partners</h2>
         <div class="partners-wrapper">
             <div class="partners-grid">
                 <!-- Premier groupe de logos -->
@@ -204,8 +212,8 @@
             <input type="text" id="first-name" name="first-name" required>
           </div>
           <div class="field">
-            <label for="last-name">Last Name:</label>
-            <input type="text" id="last-name" name="last-name" required>
+            <label for="company-name">Company Name:</label>
+            <input type="text" id="company-name" name="company-name">
           </div>
           <div class="field">
             <label for="email">Email:</label>
@@ -216,18 +224,18 @@
         <!-- Colonne droite : Informations secondaires -->
         <div class="column">
           <div class="field">
-            <label for="contact-number">Contact Number:</label>
-            <input type="text" id="contact-number" name="contact-number">
-          </div>
-          <div class="field">
-            <label for="company-name">Company Name:</label>
-            <input type="text" id="company-name" name="company-name">
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
           </div>
           <div class="field">
             <label for="job-title">Job Title:</label>
             <input type="text" id="job-title" name="job-title">
           </div>
-        </div>
+          <div class="field">                            
+            <label for="contact-number">Contact Number:</label>
+            <input type="text" id="contact-number" name="contact-number">
+          </div>
+        </div>           
       </div>
 
       <!-- Message field spanning full width -->
@@ -239,8 +247,9 @@
       <!-- Bottom Section: Privacy & Submit -->
       <div class="bottom">
         <div class="privacy">
-          <strong>Your privacy:</strong> We will not store or use your details for any other purpose than to correspond with you about this enquiry.
-          <a href="privacy_policy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+            <input type="checkbox" id="privacy" name="privacy" required>
+            <strong>Your privacy:</strong> We will not store or use your details for any other purpose than to correspond with you about this enquiry.
+            <a href="privacy_policy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
         </div>
         <button class="submit-btn" type="submit">SEND</button>
       </div>
