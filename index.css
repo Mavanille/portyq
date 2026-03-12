@@ -21,8 +21,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 38px;
-    text-align: center;
-    margin: 20px 20px 40px 20px;
+    text-align: right;
+    margin: 25% 0 40px 20px;
     z-index: 1;
 }
 
@@ -167,7 +167,7 @@ nav.active #icons span:nth-child(3) {
 /* Animation Main logo */
 
 .hero-logo-svg {
-    width: 30%;
+    width: 25%;
     height: auto;
     animation: pulse 6s infinite;
     max-width: 100%;
@@ -178,13 +178,9 @@ nav.active #icons span:nth-child(3) {
 .text-hero{
     display: flex;
     flex-direction: column;
-    margin: 0 10% 0 5%;
+    margin: 3% 10% 0 5%;
 }
 
-.hero h1{
-    text-align: right;
-    margin-top: 30%;
-}
 
 .hero p{
     max-width: 100%;
@@ -194,7 +190,7 @@ nav.active #icons span:nth-child(3) {
 .contact-button {
     padding: 20px 40px;
     border-radius: 30px;
-    background-color: rgb(99, 195, 212);
+    background: linear-gradient(135deg, hsl(174 72% 52%), hsl(199 89% 48%));
     color: white;
     font-size: large;
     text-decoration: none;
@@ -395,7 +391,14 @@ nav.active #icons span:nth-child(3) {
 
 /* Team Cards */
 #team{
-    padding: 0;
+    padding: 20px 0 50px 0;
+    background-color: #0d1f2d;
+}
+
+.intro-team{
+    width: 50%;
+    align-items: center;
+    margin: 0 auto 10px auto;
 }
 
 .team-grid {
@@ -414,6 +417,7 @@ nav.active #icons span:nth-child(3) {
     text-align: center;
     transition: transform 0.3s;
     margin: 0 10px;
+    background-color: #1a2f42;
 }
 
 .team-card:hover {
@@ -438,19 +442,20 @@ nav.active #icons span:nth-child(3) {
 
 .team-name {
     font-size: 24px;
-    color: #2a6fa0;
+    color: white;
     margin-bottom: 15px;
     font-weight: bold;
 }
 
 .team-role {
     font-size: 15px;
-    color: #333;
+    color: #fff;
     line-height: 1.6;
 }
 
-.team h2{
-    color: black;
+#team .section-title{
+    color: white;
+    margin: 20px 0;
 }
 
 .div-lien{
@@ -567,8 +572,8 @@ input:focus,
 textarea:focus,
 select:focus {
     outline: none;
-    border-color: #f97316;
-    box-shadow: 0 0 10px rgba(249, 115, 22, 0.4);
+    border-color: hsl(199 89% 48%);
+    box-shadow: 0 0 60px hsl(174 72% 52% / 0.2);
 }
 
 textarea {
@@ -595,14 +600,14 @@ textarea {
 }
 
 .privacy a {
-    color: #f97316;
+    color: #6ec1e4;
     text-decoration: underline;
 }
 
 .submit-btn {
     padding: 15px 25px;
     font-weight: bold;
-    background: linear-gradient(45deg, #f97316, #e84b20);
+    background: linear-gradient(135deg, hsl(174 72% 52%), hsl(199 89% 48%));
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -615,7 +620,7 @@ textarea {
 .submit-btn:hover {
     opacity: 0.95;
     transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(232, 75, 32, 0.5);
+    box-shadow: 0 0 60px hsl(174 72% 52% / 0.2);
 }
 
 .grid {
@@ -623,6 +628,7 @@ textarea {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px 40px;
 }
+
 
 
 /* Footer */
